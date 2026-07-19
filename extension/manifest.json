@@ -1,0 +1,199 @@
+{
+  "manifest_version": 3,
+  "name": "Wall.io Badge",
+  "version": "1.4.0",
+  "description": "Hover a wallet address on any trading terminal (Solana, ETH, BSC) to see its average hold time.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://trojan.com/*",
+    "https://*.trojan.com/*",
+    "https://trojan-terminal.com/*",
+    "https://*.trojan-terminal.com/*",
+    "https://trojan.app/*",
+    "https://*.trojan.app/*",
+    "https://trojan.trading/*",
+    "https://*.trojan.trading/*",
+    "https://app.trojan.trading/*",
+    "https://gmgn.ai/*",
+    "https://*.gmgn.ai/*",
+    "https://axiom.trade/*",
+    "https://*.axiom.trade/*",
+    "https://trade.padre.gg/*",
+    "https://*.padre.gg/*",
+    "https://dexscreener.com/*",
+    "https://*.dexscreener.com/*",
+    "https://pump.fun/*",
+    "https://*.pump.fun/*",
+    "https://raydium.io/*",
+    "https://*.raydium.io/*",
+    "https://jup.ag/*",
+    "https://*.jup.ag/*",
+    "https://meteora.ag/*",
+    "https://*.meteora.ag/*",
+    "https://birdeye.so/*",
+    "https://*.birdeye.so/*",
+    "https://solscan.io/*",
+    "https://*.solscan.io/*",
+    "https://explorer.solana.com/*",
+    "https://*.explorer.solana.com/*",
+    "https://basedbot.app/*",
+    "https://*.basedbot.app/*",
+    "https://trade.basedbot.app/*",
+    "https://*.basedbot.tech/*",
+    "https://four.meme/*",
+    "https://*.four.meme/*",
+    "https://bananagun.io/*",
+    "https://*.bananagun.io/*",
+    "https://etherscan.io/*",
+    "https://*.etherscan.io/*",
+    "https://bscscan.com/*",
+    "https://*.bscscan.com/*",
+    "https://basescan.org/*",
+    "https://*.basescan.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://trojan.com/*",
+        "https://*.trojan.com/*",
+        "https://trojan-terminal.com/*",
+        "https://*.trojan-terminal.com/*",
+        "https://trojan.app/*",
+        "https://*.trojan.app/*",
+        "https://trojan.trading/*",
+        "https://*.trojan.trading/*",
+        "https://app.trojan.trading/*",
+        "https://gmgn.ai/*",
+        "https://*.gmgn.ai/*",
+        "https://axiom.trade/*",
+        "https://*.axiom.trade/*",
+        "https://trade.padre.gg/*",
+        "https://*.padre.gg/*",
+        "https://dexscreener.com/*",
+        "https://*.dexscreener.com/*",
+        "https://pump.fun/*",
+        "https://*.pump.fun/*",
+        "https://raydium.io/*",
+        "https://*.raydium.io/*",
+        "https://jup.ag/*",
+        "https://*.jup.ag/*",
+        "https://meteora.ag/*",
+        "https://*.meteora.ag/*",
+        "https://birdeye.so/*",
+        "https://*.birdeye.so/*",
+        "https://solscan.io/*",
+        "https://*.solscan.io/*",
+        "https://explorer.solana.com/*",
+        "https://*.explorer.solana.com/*",
+        "https://basedbot.app/*",
+        "https://*.basedbot.app/*",
+        "https://trade.basedbot.app/*",
+        "https://*.basedbot.tech/*",
+        "https://four.meme/*",
+        "https://*.four.meme/*",
+        "https://bananagun.io/*",
+        "https://*.bananagun.io/*",
+        "https://etherscan.io/*",
+        "https://*.etherscan.io/*",
+        "https://bscscan.com/*",
+        "https://*.bscscan.com/*",
+        "https://basescan.org/*",
+        "https://*.basescan.org/*"
+      ],
+      "js": [
+        "style-config.js",
+        "content.js"
+      ],
+      "css": [
+        "badge.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://trojan.com/*",
+        "https://*.trojan.com/*",
+        "https://trojan-terminal.com/*",
+        "https://*.trojan-terminal.com/*",
+        "https://trojan.app/*",
+        "https://*.trojan.app/*",
+        "https://trojan.trading/*",
+        "https://*.trojan.trading/*",
+        "https://app.trojan.trading/*",
+        "https://gmgn.ai/*",
+        "https://*.gmgn.ai/*",
+        "https://axiom.trade/*",
+        "https://*.axiom.trade/*",
+        "https://trade.padre.gg/*",
+        "https://*.padre.gg/*",
+        "https://dexscreener.com/*",
+        "https://*.dexscreener.com/*",
+        "https://pump.fun/*",
+        "https://*.pump.fun/*",
+        "https://raydium.io/*",
+        "https://*.raydium.io/*",
+        "https://jup.ag/*",
+        "https://*.jup.ag/*",
+        "https://meteora.ag/*",
+        "https://*.meteora.ag/*",
+        "https://birdeye.so/*",
+        "https://*.birdeye.so/*",
+        "https://solscan.io/*",
+        "https://*.solscan.io/*",
+        "https://explorer.solana.com/*",
+        "https://*.explorer.solana.com/*",
+        "https://basedbot.app/*",
+        "https://*.basedbot.app/*",
+        "https://trade.basedbot.app/*",
+        "https://*.basedbot.tech/*",
+        "https://four.meme/*",
+        "https://*.four.meme/*",
+        "https://bananagun.io/*",
+        "https://*.bananagun.io/*",
+        "https://etherscan.io/*",
+        "https://*.etherscan.io/*",
+        "https://bscscan.com/*",
+        "https://*.bscscan.com/*",
+        "https://basescan.org/*",
+        "https://*.basescan.org/*"
+      ],
+      "js": [
+        "inject.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "badge.css",
+        "icons/*"
+      ],
+      "matches": [
+        "https://*/*"
+      ]
+    }
+  ]
+}

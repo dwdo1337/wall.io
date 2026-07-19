@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+  body{margin:0;background:#0a0c0b;font-family:'Roboto Mono','SF Mono',Consolas,Menlo,monospace;padding:40px;}
+  .brand{color:#e8ede8;font-size:22px;font-weight:700;margin-bottom:6px;}
+  .tag{color:#6a7a6a;font-size:12px;margin-bottom:28px;}
+  .row{display:flex;gap:24px;flex-wrap:wrap;}
+  .badge{position:relative;min-width:200px;padding:16px 18px;background:#0a0a0a;border:1px solid rgba(0,255,136,0.3);border-left:3px solid #00ff88;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.85),0 0 12px rgba(0,255,136,0.15);}
+  .hdr{display:flex;justify-content:space-between;align-items:center;}
+  .lbl{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:1px;font-weight:600;}
+  .per{font-size:10px;color:#4a9eff;text-transform:uppercase;letter-spacing:0.5px;font-weight:600;}
+  .val{font-size:26px;font-weight:700;text-align:center;margin:8px 0 2px;}
+  .div{height:2px;width:80%;margin:4px auto 6px;background:#00ff88;opacity:0.5;}
+  .med{font-size:12px;color:#b0b0b0;text-align:center;}
+  .xbtn{margin-top:10px;padding:6px 8px;color:#1d9bf0;background:rgba(29,155,240,0.08);border:1px solid rgba(29,155,240,0.25);border-radius:4px;font-size:11px;font-weight:600;text-align:center;}
+  .cap{margin-top:28px;color:#9aa39a;font-size:13px;line-height:1.6;max-width:420px;}
+</style></head>
+<body>
+  <div class="brand">wall.io</div>
+  <div class="tag">hover a wallet. see how long it actually holds.</div>
+
+  <div class="row">
+    <div class="badge">
+      <div class="hdr"><span class="lbl">⏱ HOLDING PERIOD</span><span class="per">30D</span></div>
+      <div class="val" style="color:#00ff88;text-shadow:0 0 8px rgba(0,255,136,0.3);">1h 10m</div>
+      <div class="div"></div>
+      <div class="med">med <b style="color:#c8c8c8;">—</b></div>
+      <div class="xbtn">SEARCH ON X ↗</div>
+    </div>
+
+    <div class="badge">
+      <div class="hdr"><span class="lbl">⏱ HOLDING PERIOD</span><span class="per">30D</span></div>
+      <div class="val" style="color:#ff5555;text-shadow:0 0 8px rgba(255,85,85,0.3);">36m</div>
+      <div class="div"></div>
+      <div class="med">med <b style="color:#c8c8c8;">—</b></div>
+      <div class="xbtn">SEARCH ON X ↗</div>
+    </div>
+  </div>
+
+  <div class="cap">one of these two wallets is still holding. the other flipped in under an hour. same chart, same token — the badge is the only thing that tells you which is which.</div>
+</body></html>
